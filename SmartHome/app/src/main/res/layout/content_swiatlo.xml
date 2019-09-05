@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SwiatloActivity"
+    tools:showIn="@layout/activity_swiatlo">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="489dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/swiatlo_salon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="30dp"
+            android:text="Światło w salonie" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/swiatlo_salon"
+            android:layout_alignBottom="@+id/swiatlo_salon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="51dp"
+            android:layout_marginRight="51dp"
+            android:checked="false"
+            android:onClick="swiatlo_click"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <TextView
+            android:id="@+id/info_swiatlo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toggleButton"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/ciemno_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginTop="139dp"
+            android:onClick="ustaw_swiatlo_click"
+            android:text="Jasność -10%" />
+
+        <Button
+            android:id="@+id/jasno_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/ciemno_button"
+            android:layout_marginEnd="38dp"
+            android:onClick="ustaw_swiatlo_click"
+            android:text="Jasność +10%" />
+
+        <Button
+            android:id="@+id/zmien_jasnosc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/ustaw_jasnosc"
+            android:layout_marginEnd="61dp"
+            android:onClick="ustaw_swiatlo_click"
+            android:text="OK" />
+
+        <EditText
+            android:id="@+id/ustaw_jasnosc"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginBottom="211dp"
+            android:ems="10"
+            android:hint="Ustaw jasność"
+            android:inputType="number"
+            android:numeric="integer"
+            tools:ignore="Deprecated" />
+
+        <ProgressBar
+            android:id="@+id/stan_salon_swiatlo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="82dp"
+            android:progress="0"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stan_salon_swiatlo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginBottom="137dp"
+            android:text="Światło w przedpokoju" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginBottom="80dp"
+            android:text="Światło w łazieńce" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginBottom="23dp"
+            android:text="Światło w sypialni" />
+
+        <ToggleButton
+            android:id="@+id/button_swiatlo_przed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignStart="@+id/zmien_jasnosc"
+            android:checked="false"
+            android:onClick="swiatlo_przed_click"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <ToggleButton
+            android:id="@+id/button_swiatlo_lazienka"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignStart="@+id/zmien_jasnosc"
+            android:checked="false"
+            android:onClick="swiatlo_lazienka_click"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <ToggleButton
+            android:id="@+id/button_swiatlo_sypialnia"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignStart="@+id/zmien_jasnosc"
+            android:checked="false"
+            android:onClick="swiatlo_sypialnia_click"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="action_userOption">Zarządzaj użytkownikami</string>
+    <string name="action_logout">Wyloguj</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wstep">Sterowanie domem</string>
+    <string name="title_activity_swiatlo">Sterowanie światłem</string>
+    <string name="title_activity_zaslony">Sterowanie zasłonami</string>
+    <string name="title_activity_wentylacja">Sterowanie wentylacją</string>
+    <string name="title_activity_temp">Sterowanie temperaturą</string>
+    <string name="title_activity_user">Zarządzanie użytkownikami</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+    <string name="title_activity_edit_user">EditUserActivity</string>
+    <string name="title_activity_remove_user">RemoveUserActivity</string>
+    <string name="adres_url">http://192/168.1.12</string>
+    <string name="title_activity_testy">TestyActivity</string>
+    <string name="hintSeekBar">0%</string>
+</resources>

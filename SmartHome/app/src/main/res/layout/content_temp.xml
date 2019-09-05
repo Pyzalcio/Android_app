@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TempActivity"
+    tools:showIn="@layout/activity_temp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/temp_gdzie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:text="Temperatura w mieszkaniu" />
+
+        <TextView
+            android:id="@+id/temperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_gdzie"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="85dp"
+            android:layout_toEndOf="@+id/temp_gdzie"
+            android:layout_toRightOf="@+id/temp_gdzie"
+            android:text="21" />
+
+        <Button
+            android:id="@+id/zw_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/temperatura"
+            android:layout_alignBottom="@+id/temperatura"
+            android:layout_toLeftOf="@+id/temp_gdzie"
+            android:layout_toStartOf="@+id/temp_gdzie"
+            android:onClick="temp_click"
+            android:text="Zwiększ" />
+
+        <Button
+            android:id="@+id/zm_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/temperatura"
+            android:layout_alignBottom="@+id/temperatura"
+            android:layout_centerHorizontal="true"
+            android:onClick="temp_click"
+            android:text="Zmniejsz" />
+
+        <EditText
+            android:id="@+id/ustaw_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zm_temp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/zw_temp"
+            android:layout_toRightOf="@+id/zw_temp"
+            android:ems="10"
+            android:hint="Ustaw temperature"
+            android:inputType="number"
+            android:numeric="integer"
+            tools:ignore="Deprecated" />
+
+        <Button
+            android:id="@+id/ustaw_przycisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/zw_temp"
+            android:layout_alignStart="@+id/zw_temp"
+            android:layout_alignTop="@+id/ustaw_temp"
+            android:onClick="temp_click"
+            android:text="OK" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

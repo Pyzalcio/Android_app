@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SekwencjaActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="489dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <Button
+            android:id="@+id/button_mruganie"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:onClick="mruganie"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:text="Mruganie" />
+
+        <Button
+            android:id="@+id/button_przemienne"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:onClick="przemienne"
+            android:text="Przemienne mruganie" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="129dp"
+            android:onClick="przycisk_stop"
+            android:text="Stop" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

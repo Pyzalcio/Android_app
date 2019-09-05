@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".WstepActivity"
+    tools:showIn="@layout/activity_wstep">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="494dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/swiatlo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:onClick="przycisk"
+            android:text="Światło" />
+
+        <Button
+            android:id="@+id/zaslony"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="109dp"
+            android:onClick="przycisk"
+            android:text="Zasłony" />
+
+        <Button
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:onClick="przycisk"
+            android:text="Temperatura" />
+
+        <Button
+            android:id="@+id/went"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="110dp"
+            android:onClick="przycisk"
+            android:text="Wentylacja" />
+
+        <Button
+            android:id="@+id/tryb"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:onClick="przycisk"
+            android:text="Tryby" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

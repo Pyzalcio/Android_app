@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zakupy</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="name_of_product">Nazwa produktu:</string>
+    <string name="add">Dodaj</string>
+    <string name="amount">Kwota</string>
+    <string name="descri_product">Opis produktu:</string>
+    <string name="amount_product">Ilość sztuk:</string>
+    <string name="new_product">Nowy produkt</string>
+    <string name="total">Suma:</string>
+    <string name="title_activity_add">Dodaj nowy produkt</string>
+    <string name="action_clear">Wyczyść wszystko</string>
+    <string name="action_del">Usuń produkt</string>
+    <string name="button_del">Usuń</string>
+    <string name="which_del">ID usuwanego produktu</string>
+    <string name="info_del">Produkt o wybranym numerze id nie istnieje !</string>
+    <string name="added">"Dodano: "</string>
+    <string name="addition_window">Okienko dodawania zostało zamknięte !</string>
+    <string name="text_for">" za "</string>
+    <string name="text_on">" w dniu "</string>
+    <string name="without_descri">" bez opisu"</string>
+    <string name="temp_info_exist">Produkt o wybranym numerze id nie istnieje !</string>
+    <string name="double_back">Wciśnij dwa razy przycisk powrotu, aby zamknąć aplikację</string>
+</resources>

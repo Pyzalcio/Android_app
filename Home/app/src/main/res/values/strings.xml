@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Inteligentny Dom</string>
+    <string name="action_userOption">Zarządzaj użytkownikami</string>
+    <string name="action_logout">Wyloguj</string>
+    <string name="title_activity_main2">Sterowanie światłem</string>
+    <string name="title_activity_wentylacja">Sterowanie wentylacją</string>
+    <string name="title_activity_temp">Sterowanie temperaturą</string>
+    <string name="title_activity_zaslony">Sterowanie zaslonami</string>
+    <string name="title_activity_wstep">Sterowanie domem</string>
+    <string name="title_activity_user">Zarządzanie użytkownikami</string>
+    <string name="title_activity_add_user">Dodawania użytkownika</string>
+    <string name="title_activity_remove_user">Usuwanie użytkownika</string>
+    <string name="title_activity_edit_user">Edytowanie użytkownika</string>
+</resources>

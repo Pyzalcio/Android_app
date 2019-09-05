@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kurs_Nauka</string>
+    <string name="action_settings">Settings</string>
+    <string name="kenis">Kenis</string>
+    <string name="toys">Toys</string>
+    <string name="title_activity_kenis">KenisActivity</string>
+    <string name="title_activity_toys">ToysActivity</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <string name="action_save">Save</string>
+</resources>

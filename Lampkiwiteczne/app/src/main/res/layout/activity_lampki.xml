@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LampkiActivity">
+
+    <RelativeLayout
+        android:layout_width="368sp"
+        android:layout_height="489sp"
+        tools:layout_editor_absoluteX="8sp"
+        tools:layout_editor_absoluteY="8sp">
+
+        <TextView
+            android:id="@+id/swiatlo_salon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Pierwsze lampki" />
+
+        <ToggleButton
+            android:id="@+id/button_lampki_1"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_alignBaseline="@+id/swiatlo_salon"
+            android:layout_alignBottom="@+id/swiatlo_salon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="51sp"
+            android:layout_marginRight="51sp"
+            android:checked="false"
+            android:onClick="swiatlo_jeden"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stan_salon_swiatlo"
+        android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_lampki_2"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:text="Drugie lampki" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginTop="186dp"
+            android:text="Trzecie lampki" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swiatlo_salon"
+            android:layout_marginBottom="206dp"
+            android:text="Czwarte lampki" />
+
+        <ToggleButton
+            android:id="@+id/button_lampki_2"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button_lampki_1"
+            android:layout_marginTop="95dp"
+            android:checked="false"
+            android:onClick="swiatlo_dwa"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <ToggleButton
+            android:id="@+id/button_lampki_3"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignStart="@+id/button_lampki_1"
+            android:checked="false"
+            android:onClick="swiatlo_trzy"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <ToggleButton
+            android:id="@+id/button_lampki_4"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignStart="@+id/button_lampki_1"
+            android:checked="false"
+            android:onClick="swiatlo_cztery"
+            android:textOff="Zapal"
+            android:textOn="Zgas" />
+
+        <Button
+            android:id="@+id/button_sek"
+            android:layout_width="189sp"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="103dp"
+            android:onClick="sekwencja"
+            android:text="Sekwencje" />
+
+        <ToggleButton
+            android:id="@+id/button_all"
+            android:layout_width="189sp"
+            android:layout_height="50sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:checked="false"
+            android:onClick="wszystkie"
+            android:textOff="Zapal wszystkie"
+            android:textOn="Zgas wszystkie" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

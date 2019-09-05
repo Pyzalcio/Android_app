@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.ja.kalkulatorwydatkw.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:onClick="Clear"
+        android:title="@string/action_clear"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_del"
+        android:orderInCategory="100"
+        android:onClick="remove_one"
+        android:title="@string/action_del"
+        app:showAsAction="never"/>
+</menu>
